@@ -4,23 +4,35 @@ title: Blog
 full_posts: 5
 ---
 
+{% include JB/setup %}
 
-{% for post in site.posts %}
-  {% if forloop.index < page.full_posts %}
-  <div class='post'>
-    <span class='date'>{{post.date | date_to_string}}</span>
-    <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
-    <div class='body'>{{post.content}}</div>    
-  </div>
-  {% else %}
-    {% if forloop.index == page.full_posts %}
-    <h3>Older Posts</h3>
-    <table class='post-list'>
-    {% endif %}
-    <tr>
-      <th><a href='{{ post.url }}'>{{ post.title }}</a></th>
-      <td>{{ post.date | date_to_string }}</td>      
-    </tr>
-  {% endif %}
-{% endfor %}
-</table>
+<link rel="stylesheet" href="/css/blog.css">
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}
+
+<script type="text/javascript">
+    $(function() {
+    var $tab = $('<ul class="tab"></ul>');
+    var $tabx = $('<div class="tabx"></div>');
+    $('h2').each(function(index) {
+        $('<li></li>').append($(this).text()).appendTo($tab); 
+        $('<div id="tab-' + index + '"></div>')
+        .append($(this).nextUntil('h2'))
+        .appendTo($tabx);
+        $(this).nextUntil('h2').remove();
+    }).remove();
+    $('.mainbody').prepend($tab).append($tabx);
+    $tabx.children().hide();
+    $('div#tab-0').show();
+    $tab.children().first().addClass('showing');
+    $tab.children().each(function(index) {
+        $(this).click(function() {
+            $tabx.children().hide();
+            $('div#tab-' + index).show();
+            $(this).addClass('showing').siblings().removeClass('showing');
+        });
+    });
+});
+</script>
+
