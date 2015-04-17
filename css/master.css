@@ -24,7 +24,7 @@ a:visited {
 
 #wrapper { 
   width: *;
-  max-width: 100%;
+  max-width: 70%;
   min-width: 50em; 
   margin: 2em auto 0;
   padding: 0;
