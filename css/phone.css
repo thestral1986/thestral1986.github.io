@@ -1,0 +1,22 @@
+@media screen and (max-width: 1100px) {
+      #wrapper {max-width: 100%;}
+  }
+
+
+  @media screen and (width: 1080px) {   
+  }
+
+
+  @media screen and (width: 720px) {
+      #header #text {
+      	font-size: 32px;
+      	margin-top: -42px;
+      	margin-left: 60px;
+      }
+     
+
+      #header #img img{
+      	width: 42px;
+      	height: 42px;
+      }
+  }
