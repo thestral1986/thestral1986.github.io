@@ -63,10 +63,10 @@ a:visited {
 }
 
 #header #img {  
-  width: 64px;
-  height: 64px;
+  width: 4em;
+  height: 4em;
   overflow: hidden; 
-  margin-left: 10px; 
+  margin-left: 0.63em; 
 }
 
 #header #img img {  
