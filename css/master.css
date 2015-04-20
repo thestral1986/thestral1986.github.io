@@ -145,18 +145,27 @@ div.post {
 
 .post br { margin-bottom: 10px;}
 
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
 pre {
-  background: #f8f8f8;
-  border: 1px solid #E7E5DC;
-  border-width: 1px 0 4px 6px;
-  padding: 1em;
-  overflow: auto;
-  color: black;
-  line-height: 120%;
-  font-family: "Consolas","Courier New",Courier,mono;
-  font-size: 12px;
-  letter-spacing: 0;
-}
+  padding: 8px 12px;
+  overflow-x: scroll; }
+
+pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
 
 table.post-list {
   width: 100%;
