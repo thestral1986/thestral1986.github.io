@@ -52,6 +52,7 @@ a:visited {
 }
 
 #header #text {  
+  margin-top: 5px;
   width: 80%;
   font-size: 48px; 
   letter-spacing: -1px;
@@ -63,7 +64,7 @@ a:visited {
 
 #header #img {    
   overflow: hidden;  
-  width: 10%; 
+  width: 9%; 
   float: left;
   margin-left: 0.63em; 
   clear: both;
