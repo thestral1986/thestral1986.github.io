@@ -39,6 +39,7 @@ a:visited {
 
 #header { 
   width: auto;
+  height: 60px;
   background: #417378;
   -moz-border-radius-topleft: 1em;
   -webkit-border-top-left-radius: 1em;
@@ -51,18 +52,21 @@ a:visited {
 }
 
 #header #text {  
+  width: 80%;
   font-size: 48px; 
   letter-spacing: -1px;
-  color: #fff;
+  color: white;
   font-weight: normal;
-  margin-top: -64px;
-  margin-left: 90px;
+  float: left;
   font-style: oblique;
 }
 
 #header #img {    
-  overflow: hidden;   
+  overflow: hidden;  
+  width: 10%; 
+  float: left;
   margin-left: 0.63em; 
+  clear: both;
 }
 
 #header #img img {  

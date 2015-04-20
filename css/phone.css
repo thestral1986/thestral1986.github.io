@@ -7,16 +7,5 @@
   }
 
 
-  @media screen and (width: 720px) {
-      #header #text {
-      	font-size: 32px;
-      	margin-top: -42px;
-      	margin-left: 60px;
-      }
-     
-
-      #header #img img{
-      	width: 42px;
-      	height: 42px;
-      }
+  @media screen and (width: 720px) {     
   }
