@@ -1,8 +1,12 @@
-body {
-  font-family: Arial, sans-serif;
+body {  
   background: #A4CFBE;
   color: #6C6E58;
   overflow-y:scroll;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
 }
 
 .more { font-size: 0.7em;}
@@ -60,6 +64,8 @@ a:visited {
   font-weight: normal;
   float: left;
   font-style: oblique;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #header #img {    
@@ -75,18 +81,22 @@ a:visited {
   height: 64px;
 }
 
-#menu {  
-  background: #3E423A;
+#menu {    
+  background: #3E423A;  
+  overflow-x:scroll;
+  overflow-y:hidden;
 }
 
-#menu ul {
+#menu ul {  
+  
   list-style: none;
   margin: 0;
-  text-align: center; 
+
 }
 
 #menu ul li {
   display: inline;
+  margin: 0;  
 }
 
 #menu ul li a {
