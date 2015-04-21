@@ -10,8 +10,22 @@
 
 	#wrapper {
       	max-width: 100%;
-      	min-width: 10em;       
+      	min-width: 10em;  
+      	margin: 0;  
+      	 -moz-border-radius: 0;
+  		-webkit-border-radius: 0;
+  		border-radius: 0;  
   	}
+
+  	#header {
+  		-moz-border-radius-topleft: 0;
+		  -webkit-border-top-left-radius: 0;
+		  -moz-border-radius-topright: 0;
+		  -webkit-border-top-right-radius: 0;  
+		  border-top-left-radius: 0;  
+		  border-top-right-radius: 0;  
+  	}
+
   	#menu ul {	
 	  -webkit-margin-before: 0;
 	  -webkit-margin-after: 0;
