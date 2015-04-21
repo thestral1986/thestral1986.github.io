@@ -93,12 +93,13 @@ a:visited {
   color: white;
   font-size: 20px;
   padding: 0 0.5em;
-  line-height: 2.5em;  
+  line-height: 40px;  
   font-weight: normal;
 }
 
 #content {  
-  padding: 2em;
+  word-wrap:break-word;
+  padding: 2em;  
 }
 
 #content h2 {
@@ -150,7 +151,6 @@ div.post {
  */
 pre,
 code {
-  font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef; }
@@ -179,6 +179,10 @@ table.post-list a {
 
 table.post-list th {
   text-align: left;
+  width: 50%;
+  text-overflow:ellipsis; 
+  white-space:nowrap; 
+  overflow:hidden;
 }
 
 table.post-list td, table.post-list th {
@@ -188,6 +192,13 @@ table.post-list td, table.post-list th {
 
 table.post-list tr:last-child td, table.post-list tr:last-child th {
   border-bottom: 0;
+}
+
+
+.body {
+  word-wrap:break-word;
+  margin-bottom: 30px; 
+
 }
 
 div.related {
@@ -315,4 +326,3 @@ a img { border: 0; }
 .cate_list {
   margin-left: -20px;
 }
-

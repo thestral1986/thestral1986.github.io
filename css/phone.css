@@ -1,6 +1,37 @@
 @media screen and (max-width: 1100px) {
       #wrapper {max-width: 100%;}
-  }
+      #menu ul li a {
+      	font-size: 25px;
+      	line-height: 70px;  
+      }
+  	#content {
+  		font-size: 40px;
+  		padding: 0.3em;
+  	}
+
+
+	.body {	 
+	  font-size: 40px;
+	  padding: 0.3em;
+	}
+	.body h1 {
+	    font-size: 50px; }
+
+	.body h2 {
+	    font-size: 44px; }
+	.body h3 {
+	    font-size: 38px; }    
+	.body h4 {
+	    font-size: 32px; }
+
+	pre,
+	code {
+	  font-size: 35px;
+	  }
+	  #category_head_item {
+	  	font-size: 40px;
+	  }
+	}
 
 
   @media screen and (width: 1080px) {   
