@@ -1,3 +1,10 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+
 body {  
   background: #A4CFBE;
   color: #6C6E58;
@@ -5,10 +12,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-  -webkit-text-size-adjust: 100%;
+  font-weight: 300; 
 }
 
 .more { font-size: 0.7em;}
@@ -19,8 +23,7 @@ img.right {
 }
 
 a {
-  color: #3E423A;
-  font-weight: bold;
+  color: #3E423A;  
 }
 
 a:visited {
@@ -85,8 +88,6 @@ a:visited {
 
 #menu {    
   background: #3E423A;  
-  overflow-x:scroll;
-  overflow-y:hidden;
 }
 
 #menu ul {  
@@ -153,7 +154,7 @@ div.post {
   padding: 0.3em 0;
   margin: 0 0 0.2em 0;
   border-bottom: 1px dashed #dba;
-  font-weight: bold;
+  
 }
 
 .post br { margin-bottom: 10px;}
@@ -185,8 +186,7 @@ table.post-list {
 }
 
 table.post-list a {
-  color: #262;
-  font-weight: bold;
+  color: #262;  
 }
 
 table.post-list th {
@@ -337,4 +337,24 @@ a img { border: 0; }
 
 .cate_list {
   margin-left: -20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+
+.body h2 {
+    font-size: 32px; }
+
+.body h3 {
+    font-size: 26px; }
+    
+.body h4 {
+    font-size: 20px; }
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1; 
+  font-weight: normal;
 }
